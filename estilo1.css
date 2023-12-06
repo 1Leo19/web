@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco (opcional, puedes ajustarlo según tu diseño) */
+  }
+  
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+.logo img {
+    max-width: 100px; /* Ajusta el tamaño del logo según lo necesites */
+  }
+  
+.login-btn .btn {
+    padding: 8px 16px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+.login-btn .btn:hover {
+    background-color: white;
+    color: black;
+  }
+
+@media screen and (max-width: 768px) {
+
+  }
+
+  .background-image {
+    background-image: url('img/fondo.jpg'); /* Reemplaza 'ruta_de_tu_imagen.jpg' por la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+    position: relative;
+  }
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Cambia el color del texto si es necesario */
+  }
+
+.text-overlay h1 {
+    font-size: 7em; /* Tamaño del texto */
+  }

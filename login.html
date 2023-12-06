@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo2.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+          <img src="img/izq.png" alt="Logo">
+        </a>
+      </header>
+      <div class="login-container">
+          <form class="login-form" action="tu_script_de_autenticacion.php" method="post">
+              <h2>Iniciar sesión</h2>
+              <div class="input-container">
+                  <input type="text" name="email" placeholder="Correo electrónico/Usuario" required>
+              </div>
+              <div class="input-container">
+                  <input type="password" id="password" placeholder="Contraseña" required>
+              </div>
+              <button type="button" onclick="validatePassword()">Ingresar</button>
+          </form>
+          <div class="register-link">
+              <p>No tienes una cuenta? <a href="register.html" class="register-btn">Regístrate</a></p>
+          </div>
+      </div>
+      <script>
+        function validatePassword() {
+            var password = document.getElementById("password").value;
+            var regex = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    
+            if (regex.test(password)) {
+                // Contraseña válida, redirigir a la página de galería
+                window.location.href = "galeria.html";
+            } else {
+                // Contraseña inválida, mostrar mensaje
+                alert("La contraseña no cumple con los requisitos.");
+            }
+        }
+    </script>
+    
+</body>
+</html>

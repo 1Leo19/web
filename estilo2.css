@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco (opcional, puedes ajustarlo según tu diseño) */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo img {
+    max-width: 100px; /* Ajusta el tamaño del logo según lo necesites */
+  }
+  
+  .login-container {
+    width: 450px; /* Ancho del contenedor */
+    padding: 40px; /* Padding interno */
+    margin: 40px auto; /* Centra el contenedor */
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo con transparencia */
+  }
+  
+  .login-form input,
+  .login-form button {
+    width: calc(100% - 20px); /* Considera el padding en el ancho total */
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo con transparencia */
+    color: black;
+  }
+  
+  .login-form button {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+  }
+  
+  
+  .register-btn {
+    color: rgb(48, 115, 160); /* Cambia el color del enlace a azul */
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  /* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .login-container {
+      width: 90%; /* Reducir el ancho del contenedor para pantallas más pequeñas */
+      margin: 20px auto; /* Ajustar el margen para centrar el contenedor */
+      padding: 20px; /* Reducir el padding interno */
+  }
+
+  .login-form input,
+  .login-form button {
+      width: calc(100% - 20px); /* Reducir el ancho de los elementos */
+      padding: 8px; /* Reducir el padding de los elementos */
+      margin-bottom: 10px; /* Reducir el margen inferior */
+  }
+}
